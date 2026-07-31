@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smålands Kontorsmöbler — Arbetsplatsen, vackrare.</title>
+  <title>Smålandsmöbler AB — Vi vet hur en god möbel ska konstrueras</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -11,73 +11,286 @@
   <link rel="stylesheet" href="store.css" />
 </head>
 <body>
-  <div class="announcement">Fri frakt över 5 000 kr <span>•</span> Leverans - Småland inom 3–7 dagar</div>
+  <div class="announcement">Fri frakt vid större beställningar <span>•</span> Snabb leverans från vårt lager i Småland</div>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Smålands Kontorsmöbler startsida"><b>smålands</b><span>kontorsmöbler</span></a>
+    <a class="brand" href="#top" aria-label="Smålandsmöbler AB startsida"><b>smålands</b><span>möbler ab</span></a>
     <nav id="main-nav">
-      <a href="#rum">Handla efter rum</a><a href="#nyheter">Nyheter</a><a href="#projekt">För företag</a><a href="#journal">Journal</a>
+      <a href="#kategorier">Kollektioner</a>
+      <a href="#utvalt">Utvalt Sortiment</a>
+      <a href="#event-offentligt">Event & Offentligt</a>
+      <a href="#kontakt">Kontakt & Öppettider</a>
     </nav>
-    <div class="nav-tools"><button aria-label="Sök">⌕</button><button class="login-trigger" type="button">Logga in</button><button class="cart-trigger" type="button">Cart <sup id="cart-count">0</sup></button><button class="menu" type="button" aria-label="Öppna meny" aria-expanded="false">☰</button></div>
+    <div class="nav-tools">
+      <button aria-label="Sök">⌕</button>
+      <button class="login-trigger" type="button">Logga in</button>
+      <button class="cart-trigger" type="button">Varukorg <sup id="cart-count">0</sup></button>
+      <button class="menu" type="button" aria-label="Öppna meny" aria-expanded="false">☰</button>
+    </div>
   </header>
 
   <main id="top">
+    <!-- HERO SECTION -->
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Grundade i Småland</p>
-        <h1>Arbetsplatsen,<br><em>vackrare.</em></h1>
-        <p class="intro">Noggrant utvalda kontorsmöbler för ett arbetsliv som känns lika bra som det fungerar.</p>
-        <a class="link-arrow" href="#rum">Utforska sortimentet <span>↘</span></a>
+        <p class="eyebrow">Smålandsmöbler AB</p>
+        <h1>Möbler för<br><em>varje miljö.</em></h1>
+        <p class="intro">Bord, stolar, eventmöbler, förvaring, avspärrning och vagnar. Vi vet hur en god möbel ska konstrueras för att tåla vardagen.</p>
+        <a class="link-arrow" href="#kategorier">Utforska hela sortimentet <span>↘</span></a>
       </div>
       <div class="hero-image image-box">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=90" alt="Ljust, modernt kontor med Smålands Kontorsmöbler" />
-        <div class="hero-label"><span>01 / 04</span><span>Form följer vardag</span></div>
+        <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1800&q=90" alt="Funktionella bord och stolar från Smålandsmöbler AB" />
+        <div class="hero-label"><span>01 / 04</span><span>Kvalitet & Funktion</span></div>
       </div>
     </section>
 
+    <!-- STATEMENT SECTION -->
     <section class="statement">
-      <p class="eyebrow">En bättre arbetsdag börjar här</p>
-      <h2>Färre val. <em>Bättre möbler.</em><br>Mer plats för det som betyder något.</h2>
-      <div class="statement-foot"><p>Från första kaffet till dagens sista idé — vi tror på möbler som gör jobbet enklare och rummet trivsammare.</p><a class="circle-link" href="#projekt">Vår filosofi <span>↗</span></a></div>
+      <p class="eyebrow">Hållbarhet i varje detalj</p>
+      <h2>Klassisk form. <em>Rejäl konstruktion.</em><br>Möbler gjorda för att användas.</h2>
+      <div class="statement-foot">
+        <p>Från fällbara eventbord och slitstarka stolar till förvaring, textilier och avspärrningar — vi levererar helhetslösningar till alla miljöer.</p>
+        <a class="circle-link" href="#event-offentligt">Läs mer <span>↗</span></a>
+      </div>
     </section>
 
-    <section class="rooms" id="rum">
-      <div class="section-heading"><p class="eyebrow">Utforska efter behov</p><h2>Rum för<br><em>arbete.</em></h2><a class="link-arrow" href="#">Se alla kategorier <span>↗</span></a></div>
+    <!-- MENU COLLECTIONS / CATEGORIES SECTION -->
+    <section class="rooms" id="kategorier">
+      <div class="section-heading">
+        <p class="eyebrow">Sortiment & Kollektioner</p>
+        <h2>Möbler efter<br><em>kategori.</em></h2>
+        <a class="link-arrow" href="#utvalt">Se utvalda produkter <span>↗</span></a>
+      </div>
       <div class="room-grid">
-        <a class="room-card large" href="#"><img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1400&q=85" alt="Arbetsplatser" /><span>01</span><h3>Arbetsplatsen</h3><p>Höj- & sänkbara skrivbord</p></a>
-        <a class="room-card" href="#"><img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1000&q=85" alt="Ergonomisk kontorsstol" /><span>02</span><h3>Fokus</h3><p>Stolar & ergonomi</p></a>
-        <a class="room-card tone" href="#"><img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=1000&q=85" alt="Mötesrum" /><span>03</span><h3>Mötet</h3><p>Konferens & samarbete</p></a>
-        <a class="room-card" href="#"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Förvaring på kontor" /><span>04</span><h3>Ordning</h3><p>Förvaring & skärmar</p></a>
+        <a class="room-card large" href="#utvalt">
+          <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&w=1400&q=85" alt="Bord och stolar" />
+          <span>01</span>
+          <h3>Bord & Stolar</h3>
+          <p>Middagsbord, fällbara stolar & projektbord</p>
+        </a>
+        <a class="room-card" href="#utvalt">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1000&q=85" alt="Event & Fällbart" />
+          <span>02</span>
+          <h3>Event & Fällbart</h3>
+          <p>Smidiga fällbord & stapelstolar</p>
+        </a>
+        <a class="room-card tone" href="#utvalt">
+          <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=85" alt="Förvaring & Avspärrning" />
+          <span>03</span>
+          <h3>Förvaring & Avspärrning</h3>
+          <p>Skåp, hyllor, köstänger & barriärer</p>
+        </a>
+        <a class="room-card" href="#utvalt">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=85" alt="Textil, Vagnar & Kontor" />
+          <span>04</span>
+          <h3>Textil, Vagnar & Tillbehör</h3>
+          <p>Stolsöverdrag, transportvagnar & kontorsmöbler</p>
+        </a>
       </div>
     </section>
 
-    <section class="feature" id="nyheter">
-      <div class="feature-image"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1500&q=90" alt="Kontorsmiljö med arbetsbord" /><p>Den genomtänkta arbetsplatsen</p></div>
-      <div class="feature-copy"><p class="eyebrow">Veckans utvalda</p><p class="product-no">SKRIVBORD / 01</p><h2>Easy<br><em>elektriskt</em></h2><p class="feature-description">Rent, robust och redo för varje arbetssätt. Ett höj- och sänkbart skrivbord med plats för tankar som får växa.</p><div class="feature-meta"><span>Från 2 645 kr<br><small>exkl. moms</small></span><button class="round-button preview-trigger" data-product="easy" type="button">Se skrivbordet <b>→</b></button></div></div>
+    <!-- FEATURED HIGHLIGHT SECTION -->
+    <section class="feature" id="event-offentligt">
+      <div class="feature-image">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1500&q=90" alt="Eventbord och fällbara stolar" />
+        <p>Smålandsmöbler AB — Slitstarka fällbara lösningar</p>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Populär storsäljare</p>
+        <p class="product-no">FÄLLBORD / 01</p>
+        <h2>Småland<br><em>Eventbord Pro</em></h2>
+        <p class="feature-description">Ett extremt tåligt och fällbart bord för konferenser, festvåningar och event. Lätt att fälla ihop och lagra i vagn.</p>
+        <div class="feature-meta">
+          <span>Från 1 850 kr<br><small>exkl. moms</small></span>
+          <button class="round-button preview-trigger" data-product="eventbord" type="button">Visa produkt <b>→</b></button>
+        </div>
+      </div>
     </section>
 
-    <section class="collection">
-      <div class="collection-title"><p class="eyebrow">Utvalt för att hålla</p><h2>Allt du behöver.<br><em>Inget annat.</em></h2></div>
+    <!-- ALL PRODUCTS GRID SECTION -->
+    <section class="collection" id="utvalt">
+      <div class="collection-title">
+        <p class="eyebrow">Hela vårt brett täckande sortiment</p>
+        <h2>Generella möbler.<br><em>Hög kvalitet.</em></h2>
+      </div>
       <div class="product-grid">
-        <article class="product"><div class="product-img aqua"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Kontorsstol Caen" /><button class="preview-trigger" data-product="caen" type="button" aria-label="Förhandsvisa Caen kontorsstol">+</button></div><p class="product-tag">ERGONOMI</p><h3>Caen kontorsstol</h3><p class="price">985 kr <small>exkl. moms</small></p></article>
-        <article class="product"><div class="product-img sand"><img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=900&q=85" alt="Förvaring i ek" /><button class="preview-trigger" data-product="cabinet" type="button" aria-label="Förhandsvisa Småland skjutdörrskåp">+</button></div><p class="product-tag">FÖRVARING</p><h3>Småland skjutdörrskåp</h3><p class="price">4 595 kr <small>exkl. moms</small></p></article>
-        <article class="product"><div class="product-img rose"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85" alt="Stol till mötesrum" /><button class="preview-trigger" data-product="manacor" type="button" aria-label="Förhandsvisa Manacor barstol">+</button></div><p class="product-tag">SITTNING</p><h3>Manacor barstol</h3><p class="price">550 kr <small>exkl. moms</small></p></article>
+        <!-- Product 1 -->
+        <article class="product">
+          <div class="product-img aqua">
+            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=900&q=85" alt="Klassisk Fällstol" />
+            <button class="preview-trigger" data-product="fallstol" type="button" aria-label="Förhandsvisa Fällstol Classic">+</button>
+          </div>
+          <p class="product-tag">STOLAR & EVENT</p>
+          <h3>Fällstol Classic</h3>
+          <p class="price">345 kr <small>exkl. moms</small></p>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product">
+          <div class="product-img sand">
+            <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&w=900&q=85" alt="Småland Eventbord" />
+            <button class="preview-trigger" data-product="eventbord" type="button" aria-label="Förhandsvisa Eventbord Pro">+</button>
+          </div>
+          <p class="product-tag">BORD & FÄLLBART</p>
+          <h3>Småland Eventbord Pro</h3>
+          <p class="price">1 850 kr <small>exkl. moms</small></p>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product">
+          <div class="product-img rose">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Ergonomisk Kontorsstol" />
+            <button class="preview-trigger" data-product="caen" type="button" aria-label="Förhandsvisa Caen kontorsstol">+</button>
+          </div>
+          <p class="product-tag">KONTOR & ERGONOMI</p>
+          <h3>Caen kontorsstol</h3>
+          <p class="price">985 kr <small>exkl. moms</small></p>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product">
+          <div class="product-img sand">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=85" alt="Avspärrningsstolpe med band" />
+            <button class="preview-trigger" data-product="avsparrning" type="button" aria-label="Förhandsvisa Köstång med Band">+</button>
+          </div>
+          <p class="product-tag">AVSPÄRRNING</p>
+          <h3>Köstång med band 2m</h3>
+          <p class="price">790 kr <small>exkl. moms</small></p>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product">
+          <div class="product-img aqua">
+            <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=900&q=85" alt="Möbelvagn för stolar" />
+            <button class="preview-trigger" data-product="mobelvagn" type="button" aria-label="Förhandsvisa Transportvagn stolar">+</button>
+          </div>
+          <p class="product-tag">VAGNAR & LOGISTIK</p>
+          <h3>Transportvagn för stolar</h3>
+          <p class="price">2 200 kr <small>exkl. moms</small></p>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product">
+          <div class="product-img rose">
+            <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=900&q=85" alt="Bordsöverdrag och Textil" />
+            <button class="preview-trigger" data-product="textil" type="button" aria-label="Förhandsvisa Stretchdukar & Textil">+</button>
+          </div>
+          <p class="product-tag">TEXTIL & TILLBEHÖR</p>
+          <h3>Stretchduk för Ståbord</h3>
+          <p class="price">290 kr <small>exkl. moms</small></p>
+        </article>
       </div>
-      <a class="link-arrow all-products" href="#">Se hela sortimentet <span>↗</span></a>
+      <a class="link-arrow all-products" href="#">Kontakta oss för offert vid större volymer <span>↗</span></a>
     </section>
 
+    <!-- PROJECT SECTION -->
     <section class="project" id="projekt">
-      <div class="project-copy"><p class="eyebrow">För företag & projekt</p><h2>Din vardag.<br><em>På riktigt.</em></h2><p>Berätta hur ni arbetar, så skapar vi en miljö som gör det enklare att göra ett bra jobb.</p><a class="button-light" href="#">Prata med oss <span>↗</span></a></div>
-      <div class="project-image"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85" alt="Inspirerande kontorsmiljö" /></div>
+      <div class="project-copy">
+        <p class="eyebrow">Inredning & Stora Volymer</p>
+        <h2>Projektera din<br><em>verksamhet.</em></h2>
+        <p>Ska ni utrusta en konferensanläggning, restaurang, skola eller kontor? Vi hjälper er välja rätt möbler för rätt behov.</p>
+        <a class="button-light" href="#kontakt">Begär offert <span>↗</span></a>
+      </div>
+      <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85" alt="Komplett inredning för stora miljöer" />
+      </div>
     </section>
 
-    <section class="journal" id="journal"><div><p class="eyebrow">Smålands journal</p><h2>Välkommen<br>till <em>arbetsro.</em></h2></div><a class="journal-link" href="#"><span>01</span><strong>Så skapar du en arbetsplats<br>som människor vill komma till.</strong><i>↗</i></a><a class="journal-link" href="#"><span>02</span><strong>Den lilla guiden till<br>rätt skrivbordshöjd.</strong><i>↗</i></a></section>
+    <!-- JOURNAL / INFORMATION SECTION -->
+    <section class="journal" id="journal">
+      <div>
+        <p class="eyebrow">Smålandsmöblers kunskap</p>
+        <h2>Konstruktion &<br><em>kvalitet.</em></h2>
+      </div>
+      <a class="journal-link" href="#">
+        <span>01</span>
+        <strong>Guide: Så väljer du rätt fällbara möbler för tunga event.</strong>
+        <i>↗</i>
+      </a>
+      <a class="journal-link" href="#">
+        <span>02</span>
+        <strong>Rätt stapling & logistik – förläng livslängden på era stolar.</strong>
+        <i>↗</i>
+      </a>
+    </section>
   </main>
-  <footer><div class="footer-brand"><b>smålands</b><span>kontorsmöbler</span></div><div><p>Allt du behöver för<br>en bättre arbetsdag.</p></div><div class="footer-links"><a href="#">Kundservice</a><a href="#">Leverans & retur</a><a href="#">För företag</a><a href="#">Instagram</a></div><div class="newsletter"><p>Nyheter från Småland</p><label><input type="email" placeholder="Din e-postadress" /><button>→</button></label></div><small>© 2026 Smålands Kontorsmöbler</small></footer>
+
+  <!-- FOOTER -->
+  <footer id="kontakt">
+    <div class="footer-brand">
+      <b>smålands</b><span>möbler ab</span>
+    </div>
+    <div>
+      <p><strong>Öppettider</strong><br>
+      Måndag – Fredag: 08:00 – 17:00<br>
+      Lördag – Söndag: Stängt</p>
+    </div>
+    <div class="footer-links">
+      <p><strong>Kontakt & Info</strong></p>
+      <a href="mailto:info@smalandsmobler.se">info@smalandsmobler.se</a>
+      <a href="#">Order & Leverans</a>
+      <a href="#">Katalog & Offert</a>
+      <a href="#">Integritetspolicy</a>
+    </div>
+    <div class="newsletter">
+      <p>Få nyheter & erbjudanden</p>
+      <label>
+        <input type="email" placeholder="Din e-postadress" />
+        <button>→</button>
+      </label>
+    </div>
+    <small>© 2026 Smålandsmöbler AB. Alla rättigheter förbehållna.</small>
+  </footer>
+
+  <!-- MODALS AND OVERLAYS -->
   <div class="overlay" id="overlay" hidden></div>
-  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true"><div class="drawer-head"><h2>Cart</h2><button class="close-panel" aria-label="Stäng cart">×</button></div><div class="cart-items" id="cart-items"><p class="empty-cart">Din cart är tom.</p></div><div class="cart-footer"><div><span>Totalt exkl. moms</span><strong id="cart-total">0 kr</strong></div><button class="checkout-button" type="button">Till kassan <span>→</span></button><button class="close-panel cancel-button" type="button">Avbryt</button></div></aside>
-  <section class="modal login-modal" id="login-modal" aria-hidden="true"><button class="close-panel" aria-label="Stäng inloggning">×</button><p class="eyebrow">Välkommen tillbaka</p><h2>Logga<br>in.</h2><form id="login-form"><label>E-post<input type="email" required placeholder="namn@foretag.se"></label><label>Lösenord<input type="password" required placeholder="••••••••"></label><button type="submit">Logga in <span>→</span></button></form><p class="form-note">Ny kund? <a href="#">Skapa företagskonto</a></p></section>
-  <section class="modal product-modal" id="product-modal" aria-hidden="true"><button class="close-panel" aria-label="Stäng produktvisning">×</button><div class="preview-image"><img id="preview-image" src="" alt=""></div><div class="preview-copy"><p class="eyebrow" id="preview-category"></p><h2 id="preview-name"></h2><p id="preview-description"></p><ul class="preview-details" id="preview-details"></ul><p class="preview-price" id="preview-price"></p><div class="quantity"><button type="button" id="decrease">−</button><span id="quantity">1</span><button type="button" id="increase">+</button></div><button class="add-cart" id="add-cart" type="button">Lägg i cart <span>→</span></button><p class="preview-note">Snabb leverans 3–7 dagar · 2 års garanti</p></div></section>
-  <div class="toast" id="toast" role="status">Tillagd i din cart</div>
+  
+  <aside class="drawer" id="cart-drawer" aria-label="Varukorg" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Varukorg</h2>
+      <button class="close-panel" aria-label="Stäng varukorg">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">Din varukorg är tom.</p>
+    </div>
+    <div class="cart-footer">
+      <div><span>Totalt exkl. moms</span><strong id="cart-total">0 kr</strong></div>
+      <button class="checkout-button" type="button">Till kassan <span>→</span></button>
+      <button class="close-panel cancel-button" type="button">Avbryt</button>
+    </div>
+  </aside>
+
+  <section class="modal login-modal" id="login-modal" aria-hidden="true">
+    <button class="close-panel" aria-label="Stäng inloggning">×</button>
+    <p class="eyebrow">Välkommen tillbaka</p>
+    <h2>Logga<br>in.</h2>
+    <form id="login-form">
+      <label>E-post<input type="email" required placeholder="namn@foretag.se"></label>
+      <label>Lösenord<input type="password" required placeholder="••••••••"></label>
+      <button type="submit">Logga in <span>→</span></button>
+    </form>
+    <p class="form-note">Ny kund? <a href="#">Skapa företagskonto</a></p>
+  </section>
+
+  <section class="modal product-modal" id="product-modal" aria-hidden="true">
+    <button class="close-panel" aria-label="Stäng produktvisning">×</button>
+    <div class="preview-image"><img id="preview-image" src="" alt=""></div>
+    <div class="preview-copy">
+      <p class="eyebrow" id="preview-category"></p>
+      <h2 id="preview-name"></h2>
+      <p id="preview-description"></p>
+      <ul class="preview-details" id="preview-details"></ul>
+      <p class="preview-price" id="preview-price"></p>
+      <div class="quantity">
+        <button type="button" id="decrease">−</button>
+        <span id="quantity">1</span>
+        <button type="button" id="increase">+</button>
+      </div>
+      <button class="add-cart" id="add-cart" type="button">Lägg i varukorg <span>→</span></button>
+      <p class="preview-note">Snabb leverans från eget lager · Kvalitetsgaranti</p>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status">Tillagd i din varukorg</div>
   <script src="store.js"></script>
 </body>
 </html>
