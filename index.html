@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store.css" />
 </head>
 <body>
   <div class="announcement">Fri frakt över 5 000 kr <span>•</span> Leverans från vårt lager i Småland inom 3–7 dagar</div>
@@ -16,7 +17,7 @@
     <nav>
       <a href="#rum">Handla efter rum</a><a href="#nyheter">Nyheter</a><a href="#projekt">För företag</a><a href="#journal">Journal</a>
     </nav>
-    <div class="nav-tools"><button aria-label="Sök">⌕</button><button aria-label="Kundvagn">Bag <sup>0</sup></button><button class="menu" aria-label="Meny">☰</button></div>
+    <div class="nav-tools"><button aria-label="Sök">⌕</button><button class="login-trigger" type="button">Logga in</button><button class="cart-trigger" type="button">Cart <sup id="cart-count">0</sup></button><button class="menu" aria-label="Meny">☰</button></div>
   </header>
 
   <main id="top">
@@ -51,15 +52,15 @@
 
     <section class="feature" id="nyheter">
       <div class="feature-image"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1500&q=90" alt="Kontorsmiljö med arbetsbord" /><p>Den genomtänkta arbetsplatsen</p></div>
-      <div class="feature-copy"><p class="eyebrow">Veckans utvalda</p><p class="product-no">SKRIVBORD / 01</p><h2>Easy<br><em>elektriskt</em></h2><p class="feature-description">Rent, robust och redo för varje arbetssätt. Ett höj- och sänkbart skrivbord med plats för tankar som får växa.</p><div class="feature-meta"><span>Från 2 645 kr<br><small>exkl. moms</small></span><a class="round-button" href="#">Se skrivbordet <b>→</b></a></div></div>
+      <div class="feature-copy"><p class="eyebrow">Veckans utvalda</p><p class="product-no">SKRIVBORD / 01</p><h2>Easy<br><em>elektriskt</em></h2><p class="feature-description">Rent, robust och redo för varje arbetssätt. Ett höj- och sänkbart skrivbord med plats för tankar som får växa.</p><div class="feature-meta"><span>Från 2 645 kr<br><small>exkl. moms</small></span><button class="round-button preview-trigger" data-product="easy" type="button">Se skrivbordet <b>→</b></button></div></div>
     </section>
 
     <section class="collection">
       <div class="collection-title"><p class="eyebrow">Utvalt för att hålla</p><h2>Allt du behöver.<br><em>Inget annat.</em></h2></div>
       <div class="product-grid">
-        <article class="product"><div class="product-img aqua"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Kontorsstol Caen" /><button>+</button></div><p class="product-tag">ERGONOMI</p><h3>Caen kontorsstol</h3><p class="price">985 kr <small>exkl. moms</small></p></article>
-        <article class="product"><div class="product-img sand"><img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=900&q=85" alt="Förvaring i ek" /><button>+</button></div><p class="product-tag">FÖRVARING</p><h3>Småland skjutdörrskåp</h3><p class="price">4 595 kr <small>exkl. moms</small></p></article>
-        <article class="product"><div class="product-img rose"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85" alt="Stol till mötesrum" /><button>+</button></div><p class="product-tag">SITTNING</p><h3>Manacor barstol</h3><p class="price">550 kr <small>exkl. moms</small></p></article>
+        <article class="product"><div class="product-img aqua"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Kontorsstol Caen" /><button class="preview-trigger" data-product="caen" type="button" aria-label="Förhandsvisa Caen kontorsstol">+</button></div><p class="product-tag">ERGONOMI</p><h3>Caen kontorsstol</h3><p class="price">985 kr <small>exkl. moms</small></p></article>
+        <article class="product"><div class="product-img sand"><img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=900&q=85" alt="Förvaring i ek" /><button class="preview-trigger" data-product="cabinet" type="button" aria-label="Förhandsvisa Småland skjutdörrskåp">+</button></div><p class="product-tag">FÖRVARING</p><h3>Småland skjutdörrskåp</h3><p class="price">4 595 kr <small>exkl. moms</small></p></article>
+        <article class="product"><div class="product-img rose"><img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=900&q=85" alt="Stol till mötesrum" /><button class="preview-trigger" data-product="manacor" type="button" aria-label="Förhandsvisa Manacor barstol">+</button></div><p class="product-tag">SITTNING</p><h3>Manacor barstol</h3><p class="price">550 kr <small>exkl. moms</small></p></article>
       </div>
       <a class="link-arrow all-products" href="#">Se hela sortimentet <span>↗</span></a>
     </section>
@@ -72,5 +73,11 @@
     <section class="journal" id="journal"><div><p class="eyebrow">Smålands journal</p><h2>Välkommen<br>till <em>arbetsro.</em></h2></div><a class="journal-link" href="#"><span>01</span><strong>Så skapar du en arbetsplats<br>som människor vill komma till.</strong><i>↗</i></a><a class="journal-link" href="#"><span>02</span><strong>Den lilla guiden till<br>rätt skrivbordshöjd.</strong><i>↗</i></a></section>
   </main>
   <footer><div class="footer-brand"><b>smålands</b><span>kontorsmöbler</span></div><div><p>Allt du behöver för<br>en bättre arbetsdag.</p></div><div class="footer-links"><a href="#">Kundservice</a><a href="#">Leverans & retur</a><a href="#">För företag</a><a href="#">Instagram</a></div><div class="newsletter"><p>Nyheter från Småland</p><label><input type="email" placeholder="Din e-postadress" /><button>→</button></label></div><small>© 2026 Smålands Kontorsmöbler</small></footer>
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cart-drawer" aria-label="Cart" aria-hidden="true"><div class="drawer-head"><h2>Cart</h2><button class="close-panel" aria-label="Stäng cart">×</button></div><div class="cart-items" id="cart-items"><p class="empty-cart">Din cart är tom.</p></div><div class="cart-footer"><div><span>Totalt exkl. moms</span><strong id="cart-total">0 kr</strong></div><button class="checkout-button" type="button">Till kassan <span>→</span></button></div></aside>
+  <section class="modal login-modal" id="login-modal" aria-hidden="true"><button class="close-panel" aria-label="Stäng inloggning">×</button><p class="eyebrow">Välkommen tillbaka</p><h2>Logga<br>in.</h2><form id="login-form"><label>E-post<input type="email" required placeholder="namn@foretag.se"></label><label>Lösenord<input type="password" required placeholder="••••••••"></label><button type="submit">Logga in <span>→</span></button></form><p class="form-note">Ny kund? <a href="#">Skapa företagskonto</a></p></section>
+  <section class="modal product-modal" id="product-modal" aria-hidden="true"><button class="close-panel" aria-label="Stäng produktvisning">×</button><div class="preview-image"><img id="preview-image" src="" alt=""></div><div class="preview-copy"><p class="eyebrow" id="preview-category"></p><h2 id="preview-name"></h2><p id="preview-description"></p><p class="preview-price" id="preview-price"></p><div class="quantity"><button type="button" id="decrease">−</button><span id="quantity">1</span><button type="button" id="increase">+</button></div><button class="add-cart" id="add-cart" type="button">Lägg i cart <span>→</span></button><p class="preview-note">Snabb leverans 3–7 dagar · 2 års garanti</p></div></section>
+  <div class="toast" id="toast" role="status">Tillagd i din cart</div>
+  <script src="store.js"></script>
 </body>
 </html>
